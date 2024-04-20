@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRKHAN</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+    <nav>
+          <img src="logogrk.png" alt="logo" class="logo">
+
+          <ul id="menu-links">
+            <li> Home </li>
+            <li> Services </li>
+            <li> Projects </li>
+            <li> About Us </li>
+          </ul>
+          <button class="nav-btn"> Get Started <img src="arrow-white.png"></button>
+
+          <img src="menu.png" class="menu-icon" onclick="toogleMenu()">
+    </nav>
+
+    <div class="header">
+
+        <div class="header-content">
+        <h1> <span> FREE </span> <br> <span> LANCER </span></h1>
+
+        <div class="btn-container">
+            <button class="btn-dark">Request Call Back
+                <img src="phone.png">
+            </button>
+            <button class="btn-light">Know More
+                <img src="arrow-black.png">
+            </button>
+        </div>
+
+        <p> Passionate Website Designer with 5+ years of Experience.</p>
+    </div>
+           <img src="h2.png" class="user-img">
+        
+    </div>
+
+
+    <script type="text/javascript">
+        let navbar =document.querySelector("nav");
+
+        let menuLinks = document.getElementById("menu-links");
+
+
+
+
+        function toogleMenu(){
+            menuLinks.classList.toggle('show-menu');
+        }
+
+        window.onscroll = function(){
+            if(window.scrollY > 0){
+                navbar.style.background = '#eefff9';
+            }
+
+            else{
+                navbar.style.background = 'transparent';
+            }
+        }
+    </script>
+</body>
+</html>
